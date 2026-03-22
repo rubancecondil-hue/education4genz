@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Education4GenZ - Learning, Skills, and Knowledge for the Next Generation. Educational blog with study tips, exam preparation, career guidance, and more.">
+    <title>Education4GenZ - Learning, Skills, and Knowledge for the Next Generation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: Georgia, 'Times New Roman', Times, serif; background: #f5f0e8; }
+        a { color: #1a5276; }
+        a:hover { color: #c0392b; text-decoration: underline; }
+        .blog-header { background: #1a3c5e; }
+        .sidebar-box { background: #fff; border: 1px solid #d5c9a1; }
+        .tag-cloud a { background: #e8dcc8; color: #5a4a32; padding: 3px 10px; border-radius: 3px; font-size: 12px; display: inline-block; margin: 2px; }
+        .tag-cloud a:hover { background: #c0392b; color: #fff; text-decoration: none; }
+        .post-card { background: #fff; border: 1px solid #d5c9a1; }
+        .post-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+        .category-badge { background: #e8dcc8; color: #5a4a32; font-size: 11px; padding: 2px 8px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .btn-read-more { background: #1a5276; color: #fff; padding: 6px 16px; font-size: 13px; border-radius: 3px; text-decoration: none; }
+        .btn-read-more:hover { background: #c0392b; color: #fff; text-decoration: none; }
+        .ad-placeholder { background: #e8e0d0; border: 2px dashed #bfb49a; color: #8a7a5a; text-align: center; padding: 30px 10px; font-size: 13px; }
+        .nav-link { color: #d4e6f1; font-size: 14px; text-decoration: none; }
+        .nav-link:hover { color: #f9e79f; text-decoration: underline; }
+        ::placeholder { font-family: Arial, sans-serif; }
+        .breadcrumb { font-size: 12px; color: #8a7a5a; }
+        .breadcrumb a { color: #1a5276; font-size: 12px; }
+        .img-placeholder { background: linear-gradient(135deg, #d5c9a1, #b8a97e); display: flex; align-items: center; justify-content: center; color: #7a6a4a; font-size: 13px; font-family: Arial, sans-serif; min-height: 180px; }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="bg-gray-800 text-gray-300 text-xs py-1">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <span>📧 contact@education4genz.in | 📞 +91 98765 43210</span>
+            <span>Monday, March 16, 2026</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="blog-header text-white py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-wide" style="font-family: Georgia, serif;">📚 Education4GenZ</h1>
+            <p class="text-sm mt-1 text-blue-200" style="font-style: italic;">Learning, Skills, and Knowledge for the Next Generation</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-700 border-b border-gray-600">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between py-2">
+                <div class="hidden md:flex space-x-1">
+                    <a href="index.html" class="nav-link px-3 py-1 bg-gray-600 rounded" style="color:#f9e79f;">🏠 Home</a>
+                    <a href="categories.html" class="nav-link px-3 py-1">📂 Categories</a>
+                    <a href="archive.html" class="nav-link px-3 py-1">📦 Archive</a>
+                    <a href="about.html" class="nav-link px-3 py-1">ℹ️ About</a>
+                    <a href="contact.html" class="nav-link px-3 py-1">✉️ Contact</a>
+                </div>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-white text-sm border border-gray-500 px-3 py-1 rounded">☰ Menu</button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-3">
+                <a href="index.html" class="block nav-link py-1">🏠 Home</a>
+                <a href="categories.html" class="block nav-link py-1">📂 Categories</a>
+                <a href="archive.html" class="block nav-link py-1">📦 Archive</a>
+                <a href="about.html" class="block nav-link py-1">ℹ️ About</a>
+                <a href="contact.html" class="block nav-link py-1">✉️ Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ticker / Marquee -->
+    <div class="bg-yellow-100 border-b border-yellow-300 py-1 text-xs">
+        <div class="max-w-6xl mx-auto px-4">
+            <marquee behavior="scroll" direction="left" scrollamount="3">
+                🔥 New Post: "Top Digital Skills Every Student Should Learn" | 📖 Trending: "How Gen Z Learns Differently" | 🎓 Featured: "Best Career Options After Class 12" | 💡 Must Read: "How to Learn Programming from Scratch" | ⭐ Popular: "10 Study Tips Every Student Should Know"
+            </marquee>
+        </div>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="max-w-6xl mx-auto px-4 mt-4">
+        <img src="assets/images/banner.png" alt="Education4GenZ Banner" class="w-full rounded border border-gray-300" style="max-height: 200px; object-fit: cover;">
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="max-w-6xl mx-auto px-4 mt-3 breadcrumb">
+        <a href="index.html">Home</a> &raquo; <span>All Posts</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 mt-4 mb-10">
+        <div class="flex flex-col lg:flex-row gap-6">
+
+            <!-- Main Column -->
+            <main class="lg:w-2/3">
+                <h2 class="text-xl font-bold text-gray-800 border-b-2 border-yellow-600 pb-2 mb-4" style="font-family: Georgia;">📰 Latest Articles</h2>
+
+                <!-- Search Bar (Mobile) -->
+                <div class="lg:hidden mb-4">
+                    <input type="text" id="search-input-mobile" placeholder="Search articles..." class="w-full border border-gray-400 px-3 py-2 text-sm rounded" onkeyup="document.getElementById('search-input').value=this.value;filterPosts();">
+                </div>
+
+                <div id="no-results" style="display:none;" class="bg-yellow-50 border border-yellow-300 text-yellow-800 p-4 rounded text-sm mb-4">No articles found matching your search.</div>
+
+                <!-- Post 1 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="10 Study Tips Every Student Should Know">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <img src="assets/images/study-tips.png" alt="Study Tips" class="w-full rounded border border-gray-300" style="min-height:150px; object-fit:cover;">
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Study Tips</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/study-tips.html">10 Study Tips Every Student Should Know</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Rahul Sharma</strong> | January 15, 2025 | 📖 8 min read | 💬 23 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Studying effectively is not just about spending long hours with books. It's about working smarter, not harder. In this article, we cover the top 10 study tips that every student — whether in school or college — should follow to boost grades and retention...</p>
+                            <a href="posts/study-tips.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="How to Prepare for Exams Without Stress">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <img src="assets/images/exam-preparation.png" alt="Exam Preparation" class="w-full rounded border border-gray-300" style="min-height:150px; object-fit:cover;">
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Exam Preparation</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/exam-preparation-guide.html">How to Prepare for Exams Without Stress</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Priya Patel</strong> | February 3, 2025 | 📖 10 min read | 💬 31 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Exam season doesn't have to be a time of anxiety and sleepless nights. With proper planning, time management, and the right mindset, you can approach exams with confidence. This guide walks you through stress-free exam preparation strategies...</p>
+                            <a href="posts/exam-preparation-guide.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="Simple Productivity Hacks for Students">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <img src="assets/images/productivity.png" alt="Productivity" class="w-full rounded border border-gray-300" style="min-height:150px; object-fit:cover;">
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Productivity</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/productivity-for-students.html">Simple Productivity Hacks for Students</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Ankit Verma</strong> | March 12, 2025 | 📖 7 min read | 💬 18 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Productivity is a skill that, once mastered, can change your academic life dramatically. From the Pomodoro technique to digital detox strategies, this article reveals the simplest and most effective productivity hacks every student can start using today...</p>
+                            <a href="posts/productivity-for-students.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="Best Free Learning Websites for Students">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <img src="assets/images/learning-resources.png" alt="Learning Resources" class="w-full rounded border border-gray-300" style="min-height:150px; object-fit:cover;">
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Online Learning</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/best-learning-resources.html">Best Free Learning Websites for Students</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Sneha Kapoor</strong> | April 8, 2024 | 📖 9 min read | 💬 42 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">The internet is a goldmine of free educational resources. Whether you want to learn coding, mathematics, science, or history, there are hundreds of free websites and platforms available. This comprehensive guide lists the best ones that students and self-learners should bookmark...</p>
+                            <a href="posts/best-learning-resources.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="How to Stay Focused While Studying">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <img src="assets/images/focus-studying.png" alt="Focus While Studying" class="w-full rounded border border-gray-300" style="min-height:150px; object-fit:cover;">
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Study Tips</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/how-to-focus-while-studying.html">How to Stay Focused While Studying</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Rahul Sharma</strong> | May 20, 2024 | 📖 6 min read | 💬 27 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">In a world full of notifications and distractions, staying focused during study sessions can feel impossible. Learn evidence-based strategies to train your attention, build a distraction-free study zone, and improve concentration with simple daily habits...</p>
+                            <a href="posts/how-to-focus-while-studying.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="Best Career Options After Class 12">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">🎓 Career Guidance</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Career Guidance</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/career-options-after-12th.html">Best Career Options After Class 12</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Dr. Meena Iyer</strong> | June 5, 2024 | 📖 12 min read | 💬 55 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Choosing a career after class 12 is one of the most important decisions in a student's life. This comprehensive guide covers the top career options across Science, Commerce, and Arts streams, including engineering, medicine, business, design, law, and many more fields...</p>
+                            <a href="posts/career-options-after-12th.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 7 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="The Future of Online Education">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">🌐 Online Learning</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Online Learning</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/future-of-education.html">The Future of Online Education</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Vikram Singh</strong> | July 14, 2024 | 📖 11 min read | 💬 36 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Online education has transformed the way we learn. From MOOCs to virtual classrooms, AI tutors to gamified learning, the future of education looks exciting and radically different. This article explores trends, predictions, and what students should prepare for...</p>
+                            <a href="posts/future-of-education.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 8 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="How to Learn Programming from Scratch">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">💻 Programming</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Technology</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/how-to-learn-programming.html">How to Learn Programming from Scratch</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Arjun Nair</strong> | August 22, 2024 | 📖 13 min read | 💬 48 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Programming is one of the most valuable skills you can learn today. Whether you want to build apps, websites, or automate daily tasks, this beginner-friendly guide walks you through the complete roadmap to learn coding from absolute zero, including which languages to start with...</p>
+                            <a href="posts/how-to-learn-programming.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 9 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="Top Digital Skills Every Student Should Learn">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">🖥️ Digital Skills</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Digital Skills</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/digital-skills-for-students.html">Top Digital Skills Every Student Should Learn</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Sneha Kapoor</strong> | September 10, 2023 | 📖 8 min read | 💬 29 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">In today's digital age, knowing how to use a computer isn't enough. Students need to master skills like data analysis, basic coding, digital marketing, graphic design, and more to stay competitive. This article lists the top digital skills with learning resources for each...</p>
+                            <a href="posts/digital-skills-for-students.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 10 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="Importance of Online Learning in 2025">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">📱 E-Learning</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Online Learning</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/importance-of-online-learning.html">Importance of Online Learning in 2025</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Priya Patel</strong> | October 5, 2023 | 📖 7 min read | 💬 19 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Online learning has moved from being a convenience to a necessity. Whether it's getting certifications, learning a new language, or preparing for competitive exams, online platforms provide flexible, affordable, and high-quality education. Here's why it matters more than ever...</p>
+                            <a href="posts/importance-of-online-learning.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 11 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="How Gen Z Learns Differently">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">🧠 Learning Styles</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Education</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/future-of-education.html">How Gen Z Learns Differently</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Dr. Meena Iyer</strong> | November 18, 2023 | 📖 9 min read | 💬 33 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Gen Z is the first truly digital-native generation. They learn through YouTube, podcasts, short videos, and interactive apps. This article explores the unique learning styles of Gen Z, how traditional education is adapting, and what parents and teachers should understand...</p>
+                            <a href="posts/future-of-education.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 12 -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="Time Management Tips for Students">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">⏰ Time Management</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Productivity</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/productivity-for-students.html">Time Management Tips for Students</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Ankit Verma</strong> | December 2, 2022 | 📖 6 min read | 💬 21 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Time is the one resource every student has equally. Yet some students accomplish far more than others. The difference? Time management. In this article, we share proven techniques like time-blocking, the Eisenhower Matrix, and daily review habits that transform student productivity...</p>
+                            <a href="posts/productivity-for-students.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 13 (Bonus) -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="Best YouTube Channels for Learning">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">▶️ YouTube Learning</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Online Learning</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/best-learning-resources.html">Best YouTube Channels for Learning</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Vikram Singh</strong> | January 28, 2022 | 📖 7 min read | 💬 38 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">YouTube isn't just for entertainment — it's one of the best free learning platforms in the world. From Khan Academy to 3Blue1Brown, Crash Course to freeCodeCamp, this article curates the best channels for students across subjects including math, science, coding, and more...</p>
+                            <a href="posts/best-learning-resources.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 14 (Bonus) -->
+                <article class="post-card p-4 mb-5 blog-post-card" data-title="How to Build Good Study Habits">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/3">
+                            <div class="img-placeholder rounded border border-gray-300" style="height:160px;">📝 Study Habits</div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <span class="category-badge">Study Tips</span>
+                            <h3 class="text-lg font-bold mt-2"><a href="posts/study-tips.html">How to Build Good Study Habits</a></h3>
+                            <p class="text-xs text-gray-500 mt-1">By <strong>Rahul Sharma</strong> | March 14, 2022 | 📖 5 min read | 💬 16 Comments</p>
+                            <p class="text-sm text-gray-700 mt-2 leading-relaxed">Building good study habits takes time and consistency, but once established, they become second nature and drive academic success. This article covers the science behind habit formation and gives you a practical 21-day plan to build habits that stick...</p>
+                            <a href="posts/study-tips.html" class="btn-read-more inline-block mt-3">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Pagination -->
+                <div class="flex items-center justify-center gap-2 mt-6 text-sm">
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded">1</span>
+                    <a href="#" class="bg-white border border-gray-400 px-3 py-1 rounded hover:bg-gray-100">2</a>
+                    <a href="#" class="bg-white border border-gray-400 px-3 py-1 rounded hover:bg-gray-100">3</a>
+                    <a href="#" class="bg-white border border-gray-400 px-3 py-1 rounded hover:bg-gray-100">4</a>
+                    <span class="text-gray-500">...</span>
+                    <a href="#" class="bg-white border border-gray-400 px-3 py-1 rounded hover:bg-gray-100">12</a>
+                    <a href="#" class="bg-white border border-gray-400 px-3 py-1 rounded hover:bg-gray-100">Next →</a>
+                </div>
+
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+
+                <!-- Search -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">🔍 Search Articles</h4>
+                    <input type="text" id="search-input" placeholder="Type to search..." class="w-full border border-gray-400 px-3 py-2 text-sm rounded" onkeyup="filterPosts();">
+                </div>
+
+                <!-- Categories -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">📂 Categories</h4>
+                    <ul class="text-sm space-y-1">
+                        <li><a href="categories.html" class="flex justify-between"><span>📖 Study Tips</span><span class="text-gray-400">(24)</span></a></li>
+                        <li><a href="categories.html" class="flex justify-between"><span>📝 Exam Preparation</span><span class="text-gray-400">(18)</span></a></li>
+                        <li><a href="categories.html" class="flex justify-between"><span>🎓 Career Guidance</span><span class="text-gray-400">(15)</span></a></li>
+                        <li><a href="categories.html" class="flex justify-between"><span>💻 Technology</span><span class="text-gray-400">(21)</span></a></li>
+                        <li><a href="categories.html" class="flex justify-between"><span>🌐 Online Learning</span><span class="text-gray-400">(19)</span></a></li>
+                        <li><a href="categories.html" class="flex justify-between"><span>⚡ Productivity</span><span class="text-gray-400">(12)</span></a></li>
+                        <li><a href="categories.html" class="flex justify-between"><span>🖥️ Digital Skills</span><span class="text-gray-400">(16)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">🕐 Recent Posts</h4>
+                    <ul class="text-xs space-y-2">
+                        <li class="border-b border-dashed border-gray-200 pb-2"><a href="posts/study-tips.html">10 Study Tips Every Student Should Know</a><br><span class="text-gray-400">Jan 15, 2025</span></li>
+                        <li class="border-b border-dashed border-gray-200 pb-2"><a href="posts/exam-preparation-guide.html">How to Prepare for Exams Without Stress</a><br><span class="text-gray-400">Feb 3, 2025</span></li>
+                        <li class="border-b border-dashed border-gray-200 pb-2"><a href="posts/productivity-for-students.html">Simple Productivity Hacks for Students</a><br><span class="text-gray-400">Mar 12, 2025</span></li>
+                        <li class="border-b border-dashed border-gray-200 pb-2"><a href="posts/best-learning-resources.html">Best Free Learning Websites for Students</a><br><span class="text-gray-400">Apr 8, 2024</span></li>
+                        <li><a href="posts/how-to-focus-while-studying.html">How to Stay Focused While Studying</a><br><span class="text-gray-400">May 20, 2024</span></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Posts -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">🔥 Popular Posts</h4>
+                    <ul class="text-xs space-y-2">
+                        <li class="border-b border-dashed border-gray-200 pb-2">🥇 <a href="posts/career-options-after-12th.html">Best Career Options After Class 12</a> <span class="text-gray-400">— 55 comments</span></li>
+                        <li class="border-b border-dashed border-gray-200 pb-2">🥈 <a href="posts/how-to-learn-programming.html">How to Learn Programming from Scratch</a> <span class="text-gray-400">— 48 comments</span></li>
+                        <li class="border-b border-dashed border-gray-200 pb-2">🥉 <a href="posts/best-learning-resources.html">Best Free Learning Websites</a> <span class="text-gray-400">— 42 comments</span></li>
+                        <li class="border-b border-dashed border-gray-200 pb-2">4. <a href="posts/future-of-education.html">The Future of Online Education</a> <span class="text-gray-400">— 36 comments</span></li>
+                        <li>5. <a href="posts/exam-preparation-guide.html">Exam Preparation Guide</a> <span class="text-gray-400">— 31 comments</span></li>
+                    </ul>
+                </div>
+
+                <!-- Ad Placeholder -->
+                <div class="ad-placeholder mb-4 rounded">
+                    <p>📢 Advertisement</p>
+                    <p class="text-xs mt-1">Your Ad Here — 300x250</p>
+                    <p class="text-xs">Contact: ads@education4genz.in</p>
+                </div>
+
+                <!-- Archives -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">📦 Archives</h4>
+                    <ul class="text-sm space-y-1">
+                        <li>
+                            <button onclick="toggleArchive('archive-2025')" class="flex justify-between w-full text-left hover:text-red-700">
+                                <span>📅 2025</span>
+                                <span id="icon-archive-2025" class="text-gray-400">−</span>
+                            </button>
+                            <ul id="archive-2025" class="ml-4 text-xs mt-1 space-y-1 text-gray-600">
+                                <li><a href="archive.html">January (3)</a></li>
+                                <li><a href="archive.html">February (2)</a></li>
+                                <li><a href="archive.html">March (4)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button onclick="toggleArchive('archive-2024')" class="flex justify-between w-full text-left hover:text-red-700">
+                                <span>📅 2024</span>
+                                <span id="icon-archive-2024" class="text-gray-400">+</span>
+                            </button>
+                            <ul id="archive-2024" class="hidden ml-4 text-xs mt-1 space-y-1 text-gray-600">
+                                <li><a href="archive.html">January (2)</a></li>
+                                <li><a href="archive.html">February (3)</a></li>
+                                <li><a href="archive.html">March (2)</a></li>
+                                <li><a href="archive.html">April (4)</a></li>
+                                <li><a href="archive.html">May (3)</a></li>
+                                <li><a href="archive.html">June (2)</a></li>
+                                <li><a href="archive.html">July (3)</a></li>
+                                <li><a href="archive.html">August (4)</a></li>
+                                <li><a href="archive.html">September (2)</a></li>
+                                <li><a href="archive.html">October (3)</a></li>
+                                <li><a href="archive.html">November (2)</a></li>
+                                <li><a href="archive.html">December (3)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button onclick="toggleArchive('archive-2023')" class="flex justify-between w-full text-left hover:text-red-700">
+                                <span>📅 2023</span>
+                                <span id="icon-archive-2023" class="text-gray-400">+</span>
+                            </button>
+                            <ul id="archive-2023" class="hidden ml-4 text-xs mt-1 space-y-1 text-gray-600">
+                                <li><a href="archive.html">January (2)</a></li>
+                                <li><a href="archive.html">March (3)</a></li>
+                                <li><a href="archive.html">May (2)</a></li>
+                                <li><a href="archive.html">July (4)</a></li>
+                                <li><a href="archive.html">September (3)</a></li>
+                                <li><a href="archive.html">November (2)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button onclick="toggleArchive('archive-2022')" class="flex justify-between w-full text-left hover:text-red-700">
+                                <span>📅 2022</span>
+                                <span id="icon-archive-2022" class="text-gray-400">+</span>
+                            </button>
+                            <ul id="archive-2022" class="hidden ml-4 text-xs mt-1 space-y-1 text-gray-600">
+                                <li><a href="archive.html">January (2)</a></li>
+                                <li><a href="archive.html">March (2)</a></li>
+                                <li><a href="archive.html">June (3)</a></li>
+                                <li><a href="archive.html">September (2)</a></li>
+                                <li><a href="archive.html">December (1)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button onclick="toggleArchive('archive-2021')" class="flex justify-between w-full text-left hover:text-red-700">
+                                <span>📅 2021</span>
+                                <span id="icon-archive-2021" class="text-gray-400">+</span>
+                            </button>
+                            <ul id="archive-2021" class="hidden ml-4 text-xs mt-1 space-y-1 text-gray-600">
+                                <li><a href="archive.html">February (1)</a></li>
+                                <li><a href="archive.html">May (2)</a></li>
+                                <li><a href="archive.html">August (2)</a></li>
+                                <li><a href="archive.html">November (1)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sidebar-box p-4 mb-4" style="background: #fef9e7; border-color: #f0d98c;">
+                    <h4 class="font-bold text-sm border-b border-yellow-400 pb-2 mb-3 text-gray-800">📬 Subscribe to Newsletter</h4>
+                    <p class="text-xs text-gray-600 mb-2">Get the latest articles and study tips delivered to your inbox every week!</p>
+                    <form onsubmit="validateNewsletter(event)">
+                        <input type="text" id="newsletter-email" placeholder="Enter your email..." class="w-full border border-gray-400 px-3 py-2 text-sm rounded mb-2">
+                        <button type="submit" class="w-full bg-yellow-600 text-white text-sm py-2 rounded hover:bg-yellow-700">Subscribe Now 📩</button>
+                        <div id="newsletter-message" style="display:none;" class="text-sm mt-1"></div>
+                    </form>
+                </div>
+
+                <!-- Tag Cloud -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">🏷️ Tag Cloud</h4>
+                    <div class="tag-cloud">
+                        <a href="#">study</a>
+                        <a href="#">exam tips</a>
+                        <a href="#">productivity</a>
+                        <a href="#">career</a>
+                        <a href="#">education</a>
+                        <a href="#">online learning</a>
+                        <a href="#">skills</a>
+                        <a href="#">programming</a>
+                        <a href="#">focus</a>
+                        <a href="#">motivation</a>
+                        <a href="#">time management</a>
+                        <a href="#">class 12</a>
+                        <a href="#">college</a>
+                        <a href="#">CBSE</a>
+                        <a href="#">ICSE</a>
+                        <a href="#">JEE</a>
+                        <a href="#">NEET</a>
+                        <a href="#">coding</a>
+                        <a href="#">science</a>
+                        <a href="#">mathematics</a>
+                        <a href="#">English</a>
+                        <a href="#">notes</a>
+                        <a href="#">revision</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">free courses</a>
+                        <a href="#">AI</a>
+                        <a href="#">digital marketing</a>
+                        <a href="#">freelancing</a>
+                        <a href="#">internships</a>
+                        <a href="#">scholarships</a>
+                    </div>
+                </div>
+
+                <!-- Ad Placeholder 2 -->
+                <div class="ad-placeholder mb-4 rounded">
+                    <p>📢 Advertisement</p>
+                    <p class="text-xs mt-1">Your Ad Here — 300x600</p>
+                    <p class="text-xs">Contact: ads@education4genz.in</p>
+                </div>
+
+                <!-- Blog Stats -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">📊 Blog Stats</h4>
+                    <ul class="text-xs space-y-1 text-gray-700">
+                        <li>📝 Total Posts: <strong>247</strong></li>
+                        <li>💬 Total Comments: <strong>1,892</strong></li>
+                        <li>👁️ Total Views: <strong>5,34,210</strong></li>
+                        <li>👤 Subscribers: <strong>3,412</strong></li>
+                        <li>📅 Running Since: <strong>2021</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Blogroll -->
+                <div class="sidebar-box p-4 mb-4">
+                    <h4 class="font-bold text-sm border-b border-gray-300 pb-2 mb-3 text-gray-800">🔗 Useful Links</h4>
+                    <ul class="text-xs space-y-1">
+                        <li><a href="#">📚 NCERT Official</a></li>
+                        <li><a href="#">📖 Khan Academy</a></li>
+                        <li><a href="#">💻 freeCodeCamp</a></li>
+                        <li><a href="#">🎓 Coursera</a></li>
+                        <li><a href="#">📘 CBSE Academic</a></li>
+                        <li><a href="#">🧪 BYJU's</a></li>
+                        <li><a href="#">🎥 Unacademy</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" onclick="scrollToTop()" style="display:none; position:fixed; bottom:20px; right:20px; background:#1a5276; color:#fff; border:none; padding:10px 14px; border-radius:50%; cursor:pointer; font-size:16px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">⬆</button>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-2">📚 Education4GenZ</h4>
+                    <p class="leading-relaxed">Your go-to blog for study tips, career guidance, digital skills, and everything a student needs to succeed in today's world. Running since 2021.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-2">Quick Links</h4>
+                    <ul class="space-y-1">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-yellow-300">About Us</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-yellow-300">Categories</a></li>
+                        <li><a href="archive.html" class="text-gray-400 hover:text-yellow-300">Archive</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-2">Connect With Us</h4>
+                    <ul class="space-y-1">
+                        <li>📧 contact@education4genz.in</li>
+                        <li>🐦 Twitter: @education4genz</li>
+                        <li>📘 Facebook: /education4genz</li>
+                        <li>📸 Instagram: @education4genz</li>
+                        <li>▶️ YouTube: Education4GenZ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-4 text-center text-xs text-gray-500">
+                <p>© 2021–2026 Education4GenZ.in | All Rights Reserved | <a href="#" class="text-gray-400">Privacy Policy</a> | <a href="#" class="text-gray-400">Disclaimer</a> | <a href="#" class="text-gray-400">Terms of Use</a></p>
+                <p class="mt-1">Powered by Education4GenZ — A Blog by Students, for Students 📚</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
